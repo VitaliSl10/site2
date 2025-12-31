@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <title>Для принцессы</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            height: 100dvh;
+            background: linear-gradient(135deg, #fff5f7 0%, #fef8f5 50%, #fef5ec 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .download-btn {
+            padding: 28px 45px;
+            border: 2px solid black;
+            border-radius: 60px;
+            background: radial-gradient(ellipse at center, #ffd4d8 0%, #ffe4e1 50%, #fff0eb 100%);
+            font-size: 18px;
+            font-weight: 500;
+            color: #5a4a42;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 182, 193, 0.3);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            line-height: 1.5;
+            touch-action: manipulation;
+            -webkit-user-select: none;
+            user-select: none;
+            max-width: 90%;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.03) translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 182, 193, 0.4);
+            background: radial-gradient(ellipse at center, #ffccd1 0%, #ffddd9 50%, #ffe8e1 100%);
+        }
+
+        .download-btn:active {
+            transform: scale(0.97);
+            background: radial-gradient(ellipse at center, #ffc0c8 0%, #ffd0cc 50%, #ffddd5 100%);
+            box-shadow: 0 2px 8px rgba(255, 182, 193, 0.35);
+        }
+
+        /* Mobile specific optimizations */
+        @media (max-width: 768px) {
+            .download-btn {
+                padding: 24px 38px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 430px) {
+            .download-btn {
+                padding: 22px 32px;
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 375px) {
+            .download-btn {
+                padding: 20px 28px;
+                font-size: 14px;
+            }
+        }
+
+        body {
+            overscroll-behavior: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="Caution hot.pdf" download="Caution hot.pdf" class="download-btn">
+        Только самая красивая принцесса<br>нажмет на эту кнопку
+    </a>
+</body>
+</html>
